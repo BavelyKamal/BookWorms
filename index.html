@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Egypt Travel Website</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"></head>
+<body>
+    <header class="fixed-top bg-light">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="headlogo d-flex align-items-center">
+              <img class="float-left" src="img/logo.png" alt="" width="200px" draggable="false">
+              <h3 class="ml-3 mb-0 text-primary">Bookworms</h3>
+              <span class="vertical-line"></span>
+            </div>
+            <div class="headtitle ml-4">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle border" data-toggle="dropdown" href="#">Books</a>
+                  <div class="dropdown-menu">
+                    <h5 class="dropdown-header">Explore Categories</h5>
+                    <a class="dropdown-item" href="#">Fiction</a>
+                    <a class="dropdown-item" href="#">Non-Fiction</a>
+                    <a class="dropdown-item" href="#">Mystery & Thriller</a>
+                    <a class="dropdown-item" href="#">Science Fiction</a>
+                    <div class="dropdown-divider"></div>
+                    <h5 class="dropdown-header">Featured Authors</h5>
+                    <a class="dropdown-item" href="#">Jane Austen</a>
+                    <a class="dropdown-item" href="#">Stephen King</a>
+                    <a class="dropdown-item" href="#">J.K. Rowling</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Browse All Books</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="searchlog d-flex align-items-center">
+            <input type="text" class="form-control d-inline-block w-auto" placeholder="Search">
+            <button class="btn btn-primary ml-2">Search</button>
+            <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#loginModal">Login</button>
+          </div>
+        </div>
+        <div class="carousel-icons">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </header>
+      
+
+
+<section class="slide">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="img/s1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="bg-primary  w-100 " style="opacity: 0.2; z-index: 1; height: 180px;"></div>
+                    <div class="position-absolute w-100 top-50 start-50 translate-middle" style="z-index: 2;">
+                      <h1 class="text-white">Book Club Reads</h1>
+                      <p class="lead text-white">Explore our latest book selections and join the discussion!</p>
+                      <button class="btn btn-primary">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <img src="img/s2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container py-5">
+                <div class="row">
+                  <div class="bg-primary  w-100 " style="opacity: 0.2; z-index: 1; height: 180px;"></div>
+                  <div class="position-absolute w-100 top-50 start-50 translate-middle" style="z-index: 2;">
+                    <h1 class="text-white">Book Club Picks</h1>
+                    <p class="lead text-white">Discover our curated book recommendations for every reader!</p>
+                    <button class="btn btn-primary">Join Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/s3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container py-5">
+                <div class="row">
+                  <div class="bg-primary  w-100 " style="opacity: 0.2; z-index: 1; height: 180px;"></div>
+                  <div class="position-absolute w-100 top-50 start-50 translate-middle" style="z-index: 2;">
+                    <h1 class="text-white">Book Club Discussions</h1>
+                    <p class="lead text-white">Engage in lively conversations about our featured books!</p>
+                    <button class="btn btn-primary">Join the Conversation</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/s4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container py-5">
+                <div class="row">
+                  <div class="bg-primary  w-100 " style="opacity: 0.2; z-index: 1; height: 180px;"></div>
+                  <div class="position-absolute w-100 top-50 start-50 translate-middle" style="z-index: 2;">
+                    <h1 class="text-white">Book Club Events</h1>
+                    <p class="lead text-white">Join us for book signings, author talks, and more!</p>
+                    <button class="btn btn-primary">Explore Events</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </button>
+  </div>
+</section>
+
+<section class="loginpopup">
+
+  
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header bg-primary">
+                  <h5 class="modal-title text-light" id="loginModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember Me</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="welcome" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+              <h2 class="text-primary">Welcome to Our Book Club</h2>
+              <p class="lead">Explore the fascinating world of books with us. Join our community of avid readers and discover new stories, engage in lively discussions, and broaden your horizons.</p>
+              <a href="#learn-more" class="btn btn-primary btn-lg">Learn More</a>
+          </div>
+      </div>
+  </div>
+
+  
+</section>
+
+<section id="popular-books" class="py-5">
+  <div class="container-fluid">
+      <h2 class="text-center mb-4 bg-primary text-white p-3">Popular Books</h2>
+      <div class="accordion" id="popularBooksAccordion">  
+          <div class="card">
+              <div class="card-header" id="bookOneHeading">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-primary btn-lg" type="button" data-toggle="collapse" data-target="#bookOneCollapse" aria-expanded="true" aria-controls="bookOneCollapse">
+                          The Great Gatsby
+                      </button>
+                  </h2>
+              </div>
+              <div id="bookOneCollapse" class="collapse show" aria-labelledby="bookOneHeading" data-parent="#popularBooksAccordion">
+                  <div class="card-body">
+                      F. Scott Fitzgerald's masterpiece about the Roaring Twenties.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="bookTwoHeading">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-primary btn-lg collapsed" type="button" data-toggle="collapse" data-target="#bookTwoCollapse" aria-expanded="false" aria-controls="bookTwoCollapse">
+                          To Kill a Mockingbird
+                      </button>
+                  </h2>
+              </div>
+              <div id="bookTwoCollapse" class="collapse" aria-labelledby="bookTwoHeading" data-parent="#popularBooksAccordion">
+                  <div class="card-body">
+                      Harper Lee's classic novel exploring themes of racism and justice in the American South.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="bookThreeHeading">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-primary btn-lg collapsed" type="button" data-toggle="collapse" data-target="#bookThreeCollapse" aria-expanded="false" aria-controls="bookThreeCollapse">
+                          1984
+                      </button>
+                  </h2>
+              </div>
+              <div id="bookThreeCollapse" class="collapse" aria-labelledby="bookThreeHeading" data-parent="#popularBooksAccordion">
+                  <div class="card-body">
+                      George Orwell's dystopian masterpiece depicting a totalitarian future society.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="transarab mb-4 " > 
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col">
+              <div class="bg-primary text-white p-3">
+                  <h3 class="text-center">Translate From Arabic To English</h3>
+              </div>
+          </div>
+      </div>
+      <div class="row mt-1">
+          <div class="col">
+              <div class="bg-info text-white p-3">
+                  <h4>Write and Translate</h4>
+                  <div class="input-group mb-3">
+                      <textarea class="form-control" rows="5" id="comment" placeholder="Translate"></textarea>
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" id="button-copy" data-toggle="tooltip" title="Copy to collaborate">Copy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="transarab mb-4"> 
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col">
+              <div class="bg-primary text-white p-3">
+                <h3 class="text-center">Translate From Arabic To Frensh</h3>
+              </div>
+          </div>
+      </div>
+      <div class="row mt-1">
+          <div class="col">
+              <div class="bg-info text-white p-3">
+                  <h4>Write and Translate</h4>
+                  <div class="input-group mb-3">
+                      <textarea class="form-control" rows="5" id="comment" placeholder="Translate"></textarea>
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" id="button-copy" data-toggle="tooltip" title="Copy to collaborate">Copy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="transarab mb-4"> 
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col">
+              <div class="bg-primary text-white p-3">
+                <h3 class="text-center">Translate From Arabic To German</h3>
+              </div>
+          </div>
+      </div>
+      <div class="row mt-1">
+          <div class="col">
+              <div class="bg-info text-white p-3">
+                  <h4>Write and Translate</h4>
+                  <div class="input-group mb-3">
+                      <textarea class="form-control" rows="5" id="comment" placeholder="Translate"></textarea>
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" id="button-copy" data-toggle="tooltip" title="Copy to collaborate">Copy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="backimg">
+
+  <div class="score bg-dark position-relative" >
+    
+</div>
+
+</section>
+
+
+<section>
+    <div class="bg-primary text-white p-4">
+      <h2 class="text-center">Popular Books</h2>
+    </div>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Great Gatsby</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">To Kill a Mockingbird</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pride and Prejudice</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Catcher in the Rye</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1984</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Lord of the Rings</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Hunger Games</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="container-card">
+            <div class="card card-custom">
+              <img src="img/book8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Handmaid's Tale</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="backimg">
+
+  <div class="score bg-dark position-relative" >
+    
+</div>
+</section>
+
+<section class="thank">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="thank-container p-5">
+            <div class="thank-content">
+              <h2 class="thank-text text-center"> Thank You</h2>
+            </div>
+          </div>
+
+          <div class="container-fluid mt-5 mb-5">
+            <div class="row">
+              <div class="col-12 col-md-4 position-relative cs2">
+                <div class="thank-card card bg-dark text-white m-auto position-relative mt-5 ">
+                  <img src="img/author1.png" class="card-img w-100 h-100" alt="person">
+                  <div class="card-img-overlay">
+                    <div class="overlay">
+
+                      <h5 class="card-title text-center">All thanks and appreciation</h5>
+                      <i class="far fa-clock ms-5"></i>
+                      <span class="card-text">February 17, 2025</span>
+                      <div class="thank-img">
+                        <img src="img/author1.png" alt="">
+                      </div>
+                      <div class="t-text">
+                        <p class="thank-text">J.K. Rowling</p>
+                        <p class="thank-text">Author of Harry Potter series</p>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+              </div>
+
+              <div class="col-12 col-md-4 position-relative"> 
+                <div class="thank-card card bg-dark text-white m-auto position-relative mt-5">
+                    <img src="img/author2.png" class="card-img w-100 h-100" alt="person">
+                  <div class="card-img-overlay">
+                    <div class="overlay">
+
+                      <h5 class="card-title text-center">All thanks and appreciation</h5>
+                      <i class="far fa-clock ms-5"></i>
+                      <span class="card-text">February 26, 2025</span>
+
+                      <div class="thank-img">
+                        <img src="img/author2.png" alt="">
+                      </div>
+                      <div class="t-text">
+                        <p class="thank-text">Stephen King</p>
+                        <p class="thank-text">Author of It and The Shining</p>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+              </div>
+              <div class="col-12 col-md-4 position-relative">
+                <div class="thank-card card bg-dark text-white m-auto position-relative mt-5">
+                    <img src="img/author3.png" class="card-img w-100 h-100 " alt="person">
+                  <div class="card-img-overlay">
+                    <div class="overlay ">
+
+                      <h5 class="card-title text-center">All thanks and appreciation</h5>
+                      <i class="far fa-clock ms-5"></i>
+                      <span class="card-text">February 28, 2025</span>
+
+                      <div class="thank-img">
+                        <img src="img/author3.png" alt="">
+                      </div>
+                      <div class="t-text">
+                        <p class="thank-text">Agatha Christie</p>
+                        <p class="thank-text">Author of Murder on the Orient Express</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>  
+
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> 
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <hr class="mt-5">
+        </div> 
+      </div> 
+    </div> 
+  </section>
+
+
+  <section class="news">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="news-header mt-5">
+            <h2 class="news-title text-center">
+              Book News
+            </h2>
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="container">
+      <div class="news-card card mb-3 mt-5" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="news-col2 col-md-4 order-md-2" style="height: 400px; width:400px ;">
+            <img src="img/book1.jpg" class="news-img img-fluid rounded-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8 order-md-1">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">New York Times Bestseller List Update</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> Wednesday, May 10th, 2023</span>
+              <span class="news-line d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">The latest New York Times Bestseller List has been released, featuring several new additions and notable changes. Check out the full list to discover the hottest books of the moment.</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="link-1 btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>Bestsellers</a>
+                <a href="#" class="link-2 btn btn-secondary ms-2"><i class="fas fa-book me-1"></i>View List</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-arrow-right me-1"></i>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card card mb-3 mt-5" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="news-col col-md-4" style="height: 400px; width:400px ;">
+            <img src="img/book4.jpg" class="news-img img-fluid rounded-end align-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">Author Interview: Jane Doe</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> Friday, June 2nd, 2023</span>
+              <span class="news-line d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Join us as we sit down with acclaimed author Jane Doe to discuss her latest novel, "The Secrets We Keep". Discover the inspiration behind the story and get an exclusive glimpse into the writing process.</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>Author Interview</a>
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-book me-1"></i>The Secrets We Keep</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-arrow-right me-1"></i>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card card mb-3 mt-5" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="news-col2 col-md-4 order-md-2" style="height: 400px; width:400px ;">
+            <img src="img/book6.jpg" class="news-img img-fluid rounded-end align-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8 order-md-1">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">Book Club Recommendations</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> Monday, July 17th, 2023</span>
+              <span class="news-line d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Looking for your next great read? Check out our book club recommendations for July, featuring a diverse selection of genres and themes. Whether you're in a book club or reading solo, these books are sure to captivate and inspire.</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>Book Club</a>
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-book me-1"></i>View Recommendations</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-arrow-right me-1"></i>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card card mb-3 mt-5" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="news-col col-md-4" style="height: 400px; width:400px ;">
+            <img src="img/book7.jpg" class="news-img img-fluid rounded-end align-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">Local Author Spotlight</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> Thursday, September 21st, 2023</span>
+              <span class="news-line d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Discover the talented local authors in your community. This month, we shine a spotlight on John Smith, whose debut novel "The City of Lost Dreams" has been receiving rave reviews. Learn more about John's writing journey and how he captures the essence of our city in his work.</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>Local Author</a>
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-book me-1"></i>The City of Lost Dreams</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-arrow-right me-1"></i>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+   <section class="join">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="join-header">
+            <h2 class="join-title text-center"> join us</h2>
+          </div> 
+        </div>   
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="join-content m-auto mt-5">
+              <p class="join-text"> subscribe now</p>
+              <img src="img/x.jpg" alt="twitter">
+              <p class="join-text"> go to link </p>
+          </div> 
+        </div>
+
+        <div class="col">
+          <div class="join-content m-auto mt-5">
+              <p class="join-text"> subscribe now</p>
+              <img src="img/wha.jpg" alt="whatsapp">
+              <p class="join-text"> go to link </p>
+          </div> 
+        </div>
+
+        <div class="col">
+          <div class="join-content m-auto mt-5">
+              <p class="join-text"> subscribe now</p>
+              <img src="img/in.jpg" alt="linkedin">
+              <p class="join-text"> go to link </p>
+          </div> 
+        </div>
+
+        <div class="col">
+          <div class="join-content m-auto mt-5">
+              <p class="join-text"> subscribe now</p>
+              <img src="img/ins.jpg" alt="instgram">
+              <p class="join-text"> go to link </p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="footer">
+    <div class="footer-container container-fluid mt-5 ">
+      <div class="row">
+        <div class="col">
+          <div class="footer-content m-auto">
+            <hr>
+            <img src="img/logo.png" alt="book logo">
+            <span>good company</span>
+            <hr>
+            <p class="footer-text">tel : 000-000-000</p>
+            <p class="footer-text">address : egypt</p>
+            <p class="footer-text">fax : 000-000-000</p>
+          </div> 
+        </div> 
+
+        <div class="col">
+          <div class="footer-content m-auto">
+            <hr>
+            <img src="img/logo.png" alt="book logo">
+            <span>important links</span>
+            <hr>
+            <ul class="footer-links">
+              <li><a href="#">visit us</a></li>
+              <li><a href="#">take alook</a></li>
+              <li><a href="#">your health is more important</a></li>
+            </ul>
+          </div> 
+        </div> 
+
+        <div class="col">
+          <div class="footer-content m-auto">
+            <hr>
+            <img src="img/logo.png" alt="book logo">
+            <span>vision</span>
+            <hr>
+            <p class="footer-text">services for all</p>
+            <p class="footer-text">provide best services</p>
+            <p class="footer-text">you will be better than before</p>
+          </div> 
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="footer-copyright">
+            <hr>
+            <h2 class="footer-copy text-center">Copyright &copy; 2024 Book Lovers Library. All rights reserved.</h2>
+            <hr>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

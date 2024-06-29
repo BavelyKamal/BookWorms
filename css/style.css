@@ -1,0 +1,356 @@
+.vertical-line {
+  border-left: 2px solid #007BFF; 
+  height: 50px; 
+  display: inline-block;
+  margin-left: 20px; 
+ 
+}
+
+.carousel-icons {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.carousel-icons a i{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 80px;
+  color: #2d3872;
+}
+
+.carousel-icons a i:hover {
+  color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+.backimg {
+  position: relative;
+  width: 100%;
+  background-image: url(../img/s3.jpg);
+  height:350px;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+
+.card-custom {
+position: relative;
+width: 100%;
+transition: transform 0.8s;
+}
+
+.card-custom:hover {
+transform: translate(0, -10px);
+}
+
+.card-custom::after {
+content: "";
+position: absolute;
+transition: 0.8s;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+background-color: rgba(6, 6, 21, 0.8); 
+opacity: 0;
+z-index: -1;
+}
+
+.card-custom:hover::after {
+width: 100%;
+height: 100%;
+opacity: 0.8;
+}
+
+.transarab{
+  padding-right: 90px;
+  padding-left: 40px;
+  border-radius: 10px;
+}
+/* ---------------------------------------------------------------------------------- */
+.thank-container {
+  background-color: #007BFF !important;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.thank-content .thank-text {
+  font-weight: bold !important;
+  font-size: 3em;
+  text-transform: capitalize; 
+}
+
+.thank-card {
+  height: 500px;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 1s;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+.thank-card img {
+  /* width: 100%;
+  height: 100%; */
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  content: "";
+  background: rgba(49, 48, 77, 0.64);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  transition: height 1s, background 1s;
+}
+
+.card-img-overlay .card-title {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  top: 35px;
+  left: 50px;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+
+.card-img-overlay i {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  top: 14%;
+  left: 20%;
+  font-size: 1em;
+}
+
+.card-img-overlay .card-text {
+  position: absolute;
+  color: #ded5d5;
+  z-index: 2;
+  top: 12%;
+  left: 100px;
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+.thank-card:hover {
+  transform: scale(0.8);
+}
+
+.thank-card:hover .overlay {
+  background: rgba(20, 51, 134, 0.58);
+}
+
+.overlay .thank-img {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  bottom: 100px;
+  left: 50px;
+  border-radius: 50%;
+}
+
+.thank-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.overlay .t-text {
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+.news-title {
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #007Bff;
+}
+
+.news-card {
+  border-radius: 10px;
+  box-shadow: 1px 1px 24px 5px #af94d5;
+  overflow: hidden; /* Ensure the image stays within the card */
+}
+
+
+.news-col2 .news-img {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12% 100%);
+ 
+}
+
+.news-col img {
+  clip-path: polygon(0% 0%, 100% 0%, 83.2% 100.3%, 0% 100%);
+ 
+}
+
+.news-img {
+  transition: transform 0.5s; 
+}
+
+.news-card:hover img {
+  transform: scale(1.1); /* Zoom in the image on hover */
+}
+
+.card-body .news-text {
+  color: #007bff;
+}
+
+.card-body .news-line {
+  width: 530px !important;
+  height: 4px !important;
+  background-color: #3C0753;
+  border-radius: 400px;
+  margin: 10px 0;
+}
+
+.post-btn a {
+  color: #e8ebf0;
+  border-radius: 5px;
+  padding-right:20px;
+  margin-right:4PX;
+}
+
+.post-btn .link-3:hover {
+  color: #007BFF;
+}
+
+@media screen and (max-width:786px) {
+  .news-col2 .news-img,
+  .news-col img {
+    clip-path: none !important;
+  }
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+
+.join-header .join-title {
+  font-size: 3.5em;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #007bff;
+  padding-bottom:49px;
+  padding-top:20px;
+}
+
+.join-content {
+  width: 250px;
+  height: 250px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 20px 5px #af94d5;
+  border-radius: 20px;
+}
+
+.join-content img {
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px 5px #af94d5;
+  margin-bottom: 10px;
+}
+
+.join-content .join-text {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  color: #662085;
+}
+
+.footer-container {
+  background-color: #7dbcff;
+  color: #0348c4;
+  border-radius: 10px;
+} 
+
+.footer-content {
+  width: 450px;
+}
+
+.footer-content hr {
+  height: 2px;
+  margin: 30px 0;
+  color: white;
+}
+.footer-content img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 20px 0px #af94d5;
+  margin:0 15px 0 105px;
+}
+
+.footer-content span {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: #142471;
+}
+
+.footer-content .footer-text {
+  font-size: 1.3em;
+  margin-left: 100px;
+  line-height: 2;
+  text-transform: capitalize;
+  color: black;
+}
+
+.footer-content .footer-links {
+  list-style-type: none;
+  margin-left: 100px;
+}
+
+.footer-links li a {
+  line-height: 2.5;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+  color: #4a5766;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.footer-copyright hr{
+  height: 2px;
+  margin: 30px 0;
+}
+
+.footer-copyright .footer-copy {
+  text-transform: capitalize;
+  font-weight: bold;
+}
